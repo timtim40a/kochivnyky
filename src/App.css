@@ -1,0 +1,92 @@
+#root {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+#maindiv {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+span {
+  background-color: #00000000;
+  outline: none;
+  font-size: 4em;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+span:hover {
+  color: #1a1a1a;
+  background-color: rgba(255,255,255,0.87);;
+}
+
+.noname {
+  display: inline;
+  font-family: Rokkitt, Georgia;
+  color: rgba(255,255,255,0.87);
+  margin: 5px;
+}
+
+.notification {
+  position: fixed;
+  display: flex;
+  padding: 5px 10px;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background-color: #1a1a1add;
+  font-family: Rokkitt, Georgia;
+  align-items: center;
+
+}
+
+.ok {
+  font-family: inherit;
+  font-size: 1em;
+  background-color: #1a1a1a;
+}
+
+.notification-content {
+  font-family: inherit;
+  font-size: 1em;
+}
+
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .scroll-container {
+    padding: 5px;
+  }
+
+  .scroll-text-top, 
+  .scroll-text-bottom, 
+  .scroll-text-left, 
+  .scroll-text-right {
+    font-size: 1.5em; /* Reduce font size */
+  }
+
+  #maindiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .submit-button {
+    padding: 10px 20px; /* Increase button size */
+    font-size: 1.2em; /* Increase button text size */
+  }
+}
+
+
+
+
+
+
