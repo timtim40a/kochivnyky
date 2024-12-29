@@ -17,7 +17,7 @@ function App() {
 
   const fetchTitles = async () => {
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/titles/');
+      const response = await fetch('https://tymursoroka.eu.pythonanywhere.com/api/titles/');
       const data = await response.json();
       setTitles(data);
     } catch (err) {
@@ -31,7 +31,7 @@ function App() {
       title: currentTitle,
     };
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/titles/create', {
+      const response = await fetch('https://tymursoroka.eu.pythonanywhere.com/api/titles/create', {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
